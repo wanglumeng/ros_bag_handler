@@ -8,9 +8,6 @@
 
 #include "common/toml.hpp"
 
-namespace trunk {
-namespace perception {
-namespace lidar {
 class BagHandler {
    public:
     static BagHandler &GetInstance() {
@@ -35,6 +32,3 @@ class BagHandler {
     ~BagHandler() = default;
     BagHandler &operator=(const BagHandler &);
 };
-}  // namespace lidar
-}  // namespace perception
-}  // namespace trunk

@@ -1,8 +1,5 @@
 #include "bag_handler.h"
 
-namespace trunk {
-namespace perception {
-namespace lidar {
 
 /**
  * @brief  BagHandler init
@@ -50,8 +47,8 @@ bool BagHandler::init(const toml::table& tbl) {
         bag.close();
     }
 
-    for (auto& man_msg : main_topic_map_.at(main_topic)) {
-    }
+//    for (auto& man_msg : main_topic_map_.at(main_topic)) {
+//    }
 
 
     return true;
@@ -86,6 +83,3 @@ bool BagHandler::process() {
 
     return true;
 }
-}  // namespace lidar
-}  // namespace perception
-}  // namespace trunk
